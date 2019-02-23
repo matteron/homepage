@@ -12,6 +12,12 @@ const prefix = css`
 		margin: auto;
 		margin-top: 10%;
 	}
+	@media screen and (max-width: 414px) {
+		:host {
+			max-width: 325px;
+
+		}
+	}
 `
 const title = 'mattia'
 

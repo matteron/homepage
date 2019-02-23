@@ -14,6 +14,14 @@ const prefix = css`
 		overflow-y: auto;
 		padding: 1em;
 	}
+	@media screen and (max-width: 414px) {
+		:host {
+			max-width: 325px;
+			width: 325px;
+			max-height: default;
+		}
+	}
+
 `
 
 module.exports = info

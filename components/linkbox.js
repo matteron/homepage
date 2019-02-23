@@ -12,6 +12,14 @@ const prefix = css`
 		width: 278px;
     	height: 88px;
 	}
+	@media screen and (max-width: 414px) {
+		:host {
+			border-top: 0px;
+			border-left: 3px solid;
+			max-width: 325px;
+			width: 325px;
+		}
+	}
 	.nav {
 		display: flex;
 		justify-content: space-evenly;

@@ -7,6 +7,11 @@ const prefix = css`
 	:host {
 		display: flex;
 	}
+	@media screen and (max-width: 414px) {
+		:host {
+			flex-direction: column;
+		}
+	}
 `
 module.exports = frame
 
