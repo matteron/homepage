@@ -1,7 +1,11 @@
 # mattiaschiano.com
 Personal Website with a focus on color.
 
-Build on [Choo 🚂](https://github.com/choojs/choo)
+Built on [Choo 🚂](https://github.com/choojs/choo)
+
+The website chooses a color scheme on random upon each visit.
+
+The schemes available are hand picked.
 
 ## Commands
 Command                | Description                                      |
