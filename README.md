@@ -1,5 +1,7 @@
-# chooMS.com
-Personal Website
+# mattiaschiano.com
+Personal Website with a focus on color.
+
+Build on [Choo 🚂](https://github.com/choojs/choo)
 
 ## Commands
 Command                | Description                                      |

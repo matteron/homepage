@@ -1,5 +1,6 @@
 var css = require('sheetify')
 var choo = require('choo')
+var main = require('./views/main')
 
 css('tachyons')
 
@@ -10,9 +11,9 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-service-worker')())
 }
 
-app.use(require('./stores/clicks'))
+app.use(require('./stores/reveal'))
 
-app.route('/', require('./views/main'))
-app.route('/*', require('./views/404'))
+app.route('/', main)
+app.route('/*', main)
 
 module.exports = app.mount('body')

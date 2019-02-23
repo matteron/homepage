@@ -1,7 +1,7 @@
 {
-  "name": "chooMS.com",
-  "short_name": "chooMS.com",
-  "description": "Personal Website",
+  "name": "mattiaschiano.com",
+  "short_name": "mattia",
+  "description": "Personal Website with an emphasis on color",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000",
