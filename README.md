@@ -1,4 +1,5 @@
 # mattiaschiano.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/075be8a8-5957-4130-82fc-82c93c67a8d4/deploy-status)](https://app.netlify.com/sites/mattiaschiano/deploys)
 Personal Website with a focus on color.
 
 Built on [Choo 🚂](https://github.com/choojs/choo)
