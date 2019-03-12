@@ -41,13 +41,15 @@ const prefix = css`
 		cursor: pointer;
 		font-size: 26px;
 	}
+	.u {
+		text-decoration: line-through;
+	}
 	a {
 		color: currentColor;
 	}
 `
 module.exports = linkbox
 function linkbox(state, emit){
-
 	function click(flag){
 		emit('reveal', flag)
 	}
@@ -63,8 +65,8 @@ function linkbox(state, emit){
 				</a>
 			</div>
 			<div class="nav">
-				<p onclick=${() => {click(1)}} class="t">about</p>
-				<p onclick=${() => {click(2)}} class="t">tono</p>
+				<p onclick=${() => {click(1)}} class="t ${state.showing===1?'u':''}">about</p>
+				<p onclick=${() => {click(2)}} class="t ${state.showing===2?'u':''}">tono</p>
 			</div>
 		</div>
 	`
