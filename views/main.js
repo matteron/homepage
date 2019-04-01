@@ -15,7 +15,7 @@ const prefix = css`
 	@media screen and (max-width: 414px) {
 		:host {
 			max-width: 325px;
-
+			overflow-x: hidden;
 		}
 	}
 `
@@ -23,7 +23,11 @@ const title = 'mattia'
 
 module.exports = view
 function view(state, emit) {
-	if (state.title !== title){emit('DOMTitleChange', title)}
+	if (state.title !== title){
+		emit('DOMTitleChange', title)
+	}
+
+	document.getElementsByTagName("html")[0].setAttribute("style", "overflow-x: hidden;");
 
 	function determine(){
 		if(state.showing){
