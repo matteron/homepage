@@ -17,6 +17,9 @@ const prefix = css`
 			max-width: 325px;
 			overflow-x: hidden;
 		}
+		html {
+			overflow-x: hidden;
+		}
 	}
 `
 const title = 'mattia'
@@ -26,8 +29,6 @@ function view(state, emit) {
 	if (state.title !== title){
 		emit('DOMTitleChange', title)
 	}
-
-	//document.getElementsByTagName("html")[0].setAttribute("style", "overflow-x: hidden;");
 
 	function determine(){
 		if(state.showing){
