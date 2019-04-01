@@ -20,6 +20,7 @@ const prefix = css`
 			max-width: 325px;
 			width: 325px;
 			max-height: default;
+			-webkit-overflow-scrolling:touch
 		}
 	}
 	hr {
