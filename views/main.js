@@ -27,7 +27,7 @@ function view(state, emit) {
 		emit('DOMTitleChange', title)
 	}
 
-	document.getElementsByTagName("html")[0].setAttribute("style", "overflow-x: hidden;");
+	//document.getElementsByTagName("html")[0].setAttribute("style", "overflow-x: hidden;");
 
 	function determine(){
 		if(state.showing){
