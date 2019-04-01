@@ -22,6 +22,16 @@ const prefix = css`
 			max-height: default;
 		}
 	}
+	hr {
+		margin: 20px -20px 20px;
+		border: 1.5px solid;
+	}
+	.inner_text {
+		margin: 0px 1.5em;
+	}
+	.header:before {
+		content: "+ ";
+	}
 
 `
 
