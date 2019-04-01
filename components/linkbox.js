@@ -44,15 +44,26 @@ const prefix = css`
 	.u {
 		text-decoration: line-through;
 	}
+	.t_content {
+		outline: none;
+	}
 	a {
 		color: currentColor;
 	}
 `
+
 module.exports = linkbox
 function linkbox(state, emit){
+
 	function click(flag){
 		emit('reveal', flag)
 	}
+	function enter(key, flag){
+		if(key.code === 'Enter'){
+			click(flag)
+		}
+	}
+
 
 	return html`
 		<div class=${prefix}>
@@ -65,8 +76,26 @@ function linkbox(state, emit){
 				</a>
 			</div>
 			<div class="nav">
-				<p onclick=${() => {click(1)}} class="t ${state.showing===1?'u':''}">about</p>
-				<p onclick=${() => {click(2)}} class="t ${state.showing===2?'u':''}">tono</p>
+				<p
+					onclick=${() => {click(1)}}
+					onkeydown=${(e) => {enter(e,1)}}
+					class="t ${state.showing===1?'u':''}"
+					tabindex="0"
+				>
+					<span class="t_content" tabindex="-1">
+        				about
+    				</span>
+				</p>
+				<p
+					onclick=${() => {click(2)}}
+					onkeydown=${(e) => {enter(e,2)}}
+					class="t ${state.showing===2?'u':''}"
+					tabindex="0"
+				>
+					<span class="t_content" tabindex="-1">
+        				tono
+    				</span>
+				</p>
 			</div>
 		</div>
 	`
