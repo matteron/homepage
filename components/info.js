@@ -12,6 +12,7 @@ const prefix = css`
 		max-width: 603px;
 		max-height: 400px;
 		overflow-y: auto;
+		overflow-x: hidden;
 		padding: 1em;
 	}
 	@media screen and (max-width: 414px) {
