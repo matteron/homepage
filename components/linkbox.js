@@ -69,10 +69,10 @@ function linkbox(state, emit){
 		<div class=${prefix}>
 			<div class="con">
 				<a href="https://github.com/matteron">
-				${git()}
+					${git()}
 				</a>
 				<a href="https://twitter.com/mattiaschiano_">
-				${twit()}
+					${twit()}
 				</a>
 			</div>
 			<div class="nav">
